@@ -25,7 +25,14 @@ class FormValidtionController extends Controller {
        ]);
 
       //  Store data in database
-      Form::create($request->all());
+    //   $form = new Form();
+    //   $form->name = $request->name;
+    //   $form->email = $request->email;
+    //   $form->phone = $request->phone;
+    //   $form->subject = $request->subject;
+    //   $form->message = $request->message;
+    //   $form->save();
+    Form::create($request->all());
 
       //
       return back()->with('success', 'Your form has been submitted.');
